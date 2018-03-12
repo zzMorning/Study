@@ -4,6 +4,439 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Lato Italic'), local('Lato-Italic'), url(http://fonts.gstatic.com/s/lato/v14/S6u8w4BMUTPHjxsAUi-qJCY.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Lato Italic'), local('Lato-Italic'), url(http://fonts.gstatic.com/s/lato/v14/S6u8w4BMUTPHjxsAXC-q.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(http://fonts.gstatic.com/s/lato/v14/S6u_w4BMUTPHjxsI5wq_FQft1dw.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(http://fonts.gstatic.com/s/lato/v14/S6u_w4BMUTPHjxsI5wq_Gwft.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(http://fonts.gstatic.com/s/lato/v14/S6u_w4BMUTPHjxsI3wi_FQft1dw.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(http://fonts.gstatic.com/s/lato/v14/S6u_w4BMUTPHjxsI3wi_Gwft.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Lato Bold'), local('Lato-Bold'), url(http://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwaPGR_p.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Lato Bold'), local('Lato-Bold'), url(http://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Lato Black'), local('Lato-Black'), url(http://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh50XSwaPGR_p.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Lato Black'), local('Lato-Black'), url(http://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh50XSwiPGQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7qsDJT9g.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+        /* cyrillic */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7jsDJT9g.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+        /* greek-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7rsDJT9g.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+        /* greek */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7ksDJT9g.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+        /* vietnamese */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7osDJT9g.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7psDJT9g.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDI.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 600;
+            src: local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCdh18Smxg.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+        /* cyrillic */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 600;
+            src: local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCdo18Smxg.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+        /* greek-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 600;
+            src: local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCdg18Smxg.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+        /* greek */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 600;
+            src: local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCdv18Smxg.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+        /* vietnamese */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 600;
+            src: local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCdj18Smxg.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 600;
+            src: local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCdi18Smxg.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 600;
+            src: local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCds18Q.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldItalic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZclSdh18Smxg.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+        /* cyrillic */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldItalic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZclSdo18Smxg.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+        /* greek-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldItalic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZclSdg18Smxg.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+        /* greek */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldItalic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZclSdv18Smxg.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+        /* vietnamese */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldItalic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZclSdj18Smxg.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldItalic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZclSdi18Smxg.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldItalic'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZclSds18Q.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+        /* cyrillic */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+        /* greek-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+        /* greek */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+        /* vietnamese */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 600;
+            src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmhduz8A.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+        /* cyrillic */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 600;
+            src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxduz8A.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+        /* greek-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 600;
+            src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmxduz8A.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+        /* greek */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 600;
+            src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlBduz8A.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+        /* vietnamese */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 600;
+            src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmBduz8A.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 600;
+            src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmRduz8A.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 600;
+            src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhduz8A.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+        /* cyrillic */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxduz8A.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+        /* greek-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxduz8A.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+        /* greek */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBduz8A.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+        /* vietnamese */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBduz8A.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
         body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
         a{color:#2d374b;text-decoration:none}
         a:hover{color:#cd0200;text-decoration:underline}
@@ -136,6 +569,328 @@
         .no-csstransitions nav.menu li:hover > ul {
             display:block; /*在父菜单项悬停时显示菜单*/
         }
+        section#feature_area {
+            overflow:hidden; /*包围浮动的子元素*/
+            margin:16px 0 0; /*在页眉与专题区之间留出间隙*/
+            padding:0 0 10px;
+        }
+        section#feature_area article {float:left; width:66%;}
+        section#feature_area aside {float:right; width:34%;}
+        section#feature_area article .inner {/*带圆角和阴影的容器*/
+            padding:12px;
+            background:#fff;
+            border-radius:20px 0;
+            box-shadow:0 12px 8px -9px #555;
+        }
+        section#feature_area article a {text-decoration:none;}/*博文标题链接*/
+        section#feature_area article img { /*照片*/
+            float:left;
+            padding:0 10px 10px 0;
+        }
+        section#feature_area article h4 { /*日期*/
+            font-family:"Source Sans Pro", helvetica, sans-serif;
+            font-style:normal;
+            font-weight:400;
+            font-size:1em;
+            color:#f58c21;
+            letter-spacing:-.025em;
+        }
+        section#feature_area article h3 { /*博文标题*/
+            font-family:Lato, helvetica, sans-serif;
+            font-style:normal;
+            font-weight:700;
+            font-size:1.75em;
+            color:#555;
+            margin:0px 0 12px 0px;
+            letter-spacing:-.05em;
+        }
+        section#feature_area article#blog_leadoff p { /*博文内容*/
+            font-family:"Source Sans Pro", helvetica, sans-serif;
+            font-style: normal;
+            font-weight:400;
+            font-size:1.1em;
+            line-height:1.5em;
+            color:#616161;
+            margin:0 0px;
+            text-align:justify;
+        }
+        section#feature_area article#blog_leadoff p::first-letter { /*首字母下沉*/
+            font-family:Lato, helvetica, sans-serif;
+            font-style: normal;
+            font-weight:700;
+            font-size:4.5em;
+            float:left;
+            margin:.05em .05em 0 0;
+            line-height:0.6;
+            text-shadow:1px 3px 3px #ccc; /*IE10 及以上版本支持文本阴影*/
+        }
+        section#feature_area article#blog_leadoff p::first-line { /*首行小型大写字母*/
+            font-variant:small-caps;
+            font-size:1.2em;
+        }
+        section#feature_area aside { /*右栏*/
+            width:34%;
+            float:right;
+        }
+        form.signin {
+            width:19em; /*表单的整体宽度*/
+            float:right;
+            background:#fff;
+            border-radius:10px 0 10px 0;
+            box-shadow: 0 12px 8px -9px #555;
+        }
+        .signin fieldset { border:0; margin:10px 14px;}/*去掉默认的边框*/
+        .signin legend span {
+            font-family:Lato, helvetica, sans-serif;
+            font-weight:700; font-size:1.3em; line-height:1.1em;
+            color:#4eb8ea;
+            letter-spacing:-.05em;
+        }
+        .signin section {
+            overflow:hidden; /*包围控件和标注*/
+            padding:.25em 0; /*表单元素的间距*/
+        }
+        .signin section label {
+            font-family:"Source Sans Pro", helvetica, sans-serif;
+            font-weight:400;
+            float:left;
+            width:5em; /*标注栏的宽度*/
+            margin:.5em .3em 0 0; /*外边距保持文本与控件的间距*/
+            line-height:1.1;
+            color:#555;
+        }
+        .signin section input {
+            float:right;
+            width:10.5em; /*控件栏的宽度*/
+            margin:.2em 0 0 .5em;
+            padding:3px 10px 2px; /*输入文本与控件的间距*/
+            color:#555;
+            font-size:.8em;
+            outline:none; /*去掉默认的轮廓线*/
+            border-radius:10px 0 10px 0;
+        }
+        input:-webkit-autofill { color:#fff !important; } /*去掉 WebKit 默认的黄色背景*/
+        .signin section input[type=submit] {
+            float:right; /*将按钮与控件右边对齐*/
+            width:auto; /*重设按钮宽度*/
+            margin:0 2px 3px 0;
+            padding:0px 8px 3px;
+            font-size:1em;
+            font-weight:800;
+            color:#fff;
+            border:none;
+            background-color:#d6e636;
+            box-shadow:1px 1px 2px #888;
+        }
+        .signin section p{ /*内容为"not signed up?"*/
+            float:right;
+            clear:both;
+            margin:.2em 0 0;
+            text-align:right;
+            font-size:.8em;
+            line-height:1;
+            color:#555;
+        }
+        .signin section p a { color:#333; }/*到注册表单的链接*/
+        .signin section p a:hover {
+            color:#777;
+            text-decoration:none;
+        }
+        .signin section p.direction.error { /*错误消息*/
+            display:block;
+            color:#f00; /*添加 error 类后，把说明文字变成红色*/
+        }
+        .signin section p.direction { display:none; } /*隐藏错误消息*/
+        section#feature_area nav {
+            width:19em; /*容器整体宽度*/
+            float:right;/*与区域右边对齐*/
+            margin:15px 0 0; /*上方间距*/
+            padding:.6em 0em .75em; /*链接上下的间距*/
+            background:#fff;
+            border-radius:10px 0 10px 0;
+            box-shadow: 0 12px 8px -9px #555;
+        }
+        #feature_area nav h3 {
+            padding:0 14px 0; /*标题左右的空间*/
+            font-family:Lato, helvetica, sans-serif;
+            font-weight:700;
+            font-size:1.3em;
+            text-align:left;
+            color:#aaa;
+            letter-spacing:-.05em;
+        }
+        #feature_area nav ul { margin:0em 0 0 20px; }
+        #feature_area nav li {
+            padding:.7em 0 0 2em;
+            position:relative; /*项目符号的定位上下文*/
+            list-style-type:none
+        }
+        #feature_area nav li:before { /*定制项目符号*/
+            content:""; /*用空字符串，因为不需要实际内容*/
+            position:absolute; /*相对于列表项定位*/
+            height:10px; /*项目符号大小*/
+            width:10px;
+            left:12px; /*定位项目符号*/
+            top:12px;
+            border-radius:5px 0 5px 0; /*项目符号形状*/
+            background-color:#d6e636; /*项目符号颜色*/
+            box-shadow:1px 1px 2px #888;
+        }
+        #feature_area nav li a {
+            display:block; /*链接与列表项同宽*/
+            text-decoration:none; /*去掉默认的下划线*/
+            font-size:.9em;
+            color:#616161;
+        }
+        #feature_area nav li a:hover { color:#000; }
+        section#book_area { /*与布局同宽*/
+            clear:both;
+            border-radius:20px 0px 20px 0px;
+            border:1px solid #f58c21;
+            margin:8px 0 16px; /*上下间距*/
+            overflow:hidden;
+            background-color: #fff;
+        }
+        #book_area article { /*四本书四栏*/
+            float:left;
+            width:25%;
+            padding:10px 0;
+            background:none;
+        }
+        #book_area article .inner { /*封面外包装*/
+            position:relative; /*为弹出层提供定位上下文*/
+            width:140px; /*包装每一本书*/
+            margin:0 auto; /*在各自 article 元素内居中每一本书*/
+        }
+        #book_area .inner h3 { /*旋转文字*/
+            position:absolute;
+            width:160px;
+            left:112%; bottom:5px; /*把文字定位在图书右侧*/
+            transform:rotate(-90deg); /*旋转文字需要使用带厂商前缀的属性*/
+            transform-origin:left bottom; /*设定旋转中心点，需要带厂商前缀的属性*/
+            color:#ccc;
+            font-size:1.4em;
+            font-family:Lato, helvetica, sans-serif;
+            font-style:normal;
+            font-weight:900;
+            text-align:left;
+        }
+        /*较窄的封面需要不同的偏移量*/
+        #book_area article.right:last-child h3 { left:85%; }
+        #book_area article img { box-shadow: 0 12px 8px -9px #555; }/*封面阴影*/
+        #book_area article aside { /*弹出层共享样式开始*/
+            display:none; /*隐藏弹出层*/
+            position:absolute; /*相对于包含图片的内部 div*/
+            z-index:2;
+            width:200px; /*弹出层宽度*/
+            background:#fff;
+            padding:10px 2px 5px; /*弹出层内容边距*/
+            border:2px solid #f58c21;
+            border-radius:10px 0px 10px 0px;
+            box-shadow:4px 4px 16px #555;
+            color:#555;
+            font-family:"Source Sans Pro", helvetica, sans-serif;
+            font-size:.8em;
+            line-height:1.5em;
+        }
+        #book_area article:hover aside { display:block; }/*鼠标悬停于封面时显示弹出层*/
+        #book_area article aside li {
+            padding:.25em 0 .75em 1em; /*列表项的垂直间距和左边距*/
+            list-style-type:none; /*去掉默认的项目符号*/
+            line-height:1.2em;
+        }
+        #book_area article aside li a { /*链接文本*/
+            text-decoration:none;
+            font-size:1.2em;
+            color:#616161;
+        }
+        #book_area article aside li a:hover { /*悬停时突显链接*/
+            color:#333;
+        } /*弹出层共享样式结束*/
+        #book_area article.left aside {/*左侧两本书*/
+            left:84%; top:14px; /* 把弹出层定位在图片右侧*/
+        }
+        #book_area article.right aside {/*右侧两本书*/
+            right:84%; top:14px;/*把弹出层定位在图片左侧*/
+        }
+        #book_area article aside:after { /*橙色三角形*/
+            content:""; /*需要有内容，这里是一个空字符串*/
+            position:absolute; /*相对于弹出层定位*/
+            top:33px;
+            border:12px solid;
+            height:0px; width:0px; /*收缩边框创造三角形*/
+        }
+        #book_area article.left aside:after { /*左侧图书弹出层的三角形定位及颜色*/
+            right:100%;
+            border-color:transparent #f58c21 transparent transparent;
+        }
+        #book_area article.right aside:after { /*右侧图书弹出层的三角形定位及颜色*/
+            left:100%;
+            border-color:transparent transparent transparent #f58c21;
+        }
+        #book_area article aside:before { /*白色三角形*/
+            content:""; /*需要有内容，这里是一个空字符串*/
+            position:absolute; /*相对于弹出层定位*/
+            border:8px solid;
+            height:0px; width:0px; /*收缩边框创造三角形*/
+            z-index:100; /*保证白色三角形在最前面*/
+            top:37px;
+        }
+        #book_area article.left aside:before { /*左侧图书白色三角形的样式、位置和颜色*/
+            right:100%;
+            border-color:transparent white transparent transparent;
+        }
+        #book_area article.right aside:before { /*右侧图书白色三角形的样式、位置和颜色*/
+            left:100%;
+            border-color:transparent transparent transparent white;
+        }
+        footer {
+            padding:.5em 0 .35em 0; /*内容上下的间距*/
+            text-align:center; /*居中内容*/
+            border-radius:10px 0px 10px 0px;
+            background:#fff;
+            box-shadow:0 12px 8px -9px #555;
+        }
+        footer p { /*文本行的样式*/
+            font-family:'Source Sans Pro';
+            font-weight:400;
+            font-size:.85em;
+            letter-spacing:-.05em;
+            color:#555;
+        }
+        footer p a { /*文本行中的链接*/
+            font-family:'Source Sans Pro';
+            font-style:italic;
+            font-weight:700;
+            font-size:1em;
+            color:#4eb8ea;
+            text-decoration:none;
+        }
+        footer p a:hover {
+            color:#777;
+        }
+        footer ul { /*链接列表*/
+            display:inline-block; /*收缩包围列表*/
+            margin:4px 0 0;
+        }
+        footer li {
+            list-style-type:none; /*去掉默认的项目符号*/
+            float:left; /*让列表项水平排列*/
+            font-family:"Source Sans Pro";
+            font-weight:400;
+            font-size:.85em;
+        }
+        footer li + li a {
+            border-left:1px solid #ccc; /*链接分隔线*/
+        }
+        footer li a {
+            text-decoration:none; /*去掉链接默认的下划线*/
+            color:#aaa;
+            padding:0 5px; /*链接间距*/
+        }
+        footer a:hover {
+            color:#777;
+        }
     </style>
 </head>
 <body>
@@ -166,9 +921,44 @@
         </form>
     </header>
     <section id="feature_area">
-        <article id="blog_leadoff"></article>
+        <article id="blog_leadoff">
+            <div class="inner">
+                <h4>September 7, 2012</h4>
+                <a href="#"><h3>Managing CSS Classes with jQuery</h3></a>
+                <img src="http://www.stylinwithcss.com/images/charles_wyke-smith.jpg" alt="Charles Wyke-Smith photo" />
+                <p>recently, I signed up at Medium, the blogging platform, and can't resist visiting at least a couple of times a day - it's a very addictive experience! Articles come from numerous authors but display in one continuous feed, so it's a different model from most blog sites that are the voice of single person.  Read this Article</p>
+            </div>
+        </article>
         <aside>
-            <form></form>
+            <form autocomplete="off" class="signin"
+                  action="process_form.php" method="post">
+                <fieldset>
+                    <legend><span>Sign In for Code and Updates</span></legend>
+                    <section>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" />
+                    </section>
+                    <section>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password"
+                               maxlength="20" />
+                        <p class="direction">Wrong user name or password</p>
+                    </section>
+                    <section>
+                        <input type="submit" value="Sign In" />
+                        <p class="signup">Not signed up? <a href="#">Register now!
+                        </a></p>
+                    </section>
+                </fieldset>
+            </form>
+            <nav>
+                <h3>Recent Articles</h3>
+                <ul>
+                    <li><a href="#">Z-index&mdash;Layers of Confusion</a></li>
+                    <li><a href="#">Box-Image Techniques</a></li>
+                    <li><a href="#">Shadow FX with CSS3</a></li>
+                </ul>
+            </nav>
         </aside>
     </section>
     <section id="promo_area">
@@ -176,7 +966,70 @@
             <div class="inner"></div>
         </article>
     </section>
-    <fooer></fooer>
+    <section id="book_area">
+        <article class="left">
+            <div class="inner">
+                <h3>HTML5 + CSS3</h3><!-- 要旋转的文字 -->
+                <img src="http://www.stylinwithcss.com/images/stylin3_cover1-130x160.jpg" alt="Stylin' with CSS cover" />
+                <aside> <!-- 弹出层 -->
+                    <ol>
+                        <li><a href="#">Download the Code</a></li>
+                        <li><a href="#">Table of Contents</a></li>
+                        <li><a href="#">Buy this Book</a></li>
+                    </ol>
+                </aside>
+            </div>
+        </article>
+        <article class="left">
+            <div class="inner">
+                <h3>HTML5 + CSS3</h3><!-- 要旋转的文字 -->
+                <img src="http://www.stylinwithcss.com/images/stylin3_cover1-130x160.jpg" alt="Stylin' with CSS cover" />
+                <aside> <!-- 弹出层 -->
+                    <ol>
+                        <li><a href="#">Download the Code</a></li>
+                        <li><a href="#">Table of Contents</a></li>
+                        <li><a href="#">Buy this Book</a></li>
+                    </ol>
+                </aside>
+            </div>
+        </article>
+        <article class="left">
+            <div class="inner">
+                <h3>HTML5 + CSS3</h3><!-- 要旋转的文字 -->
+                <img src="http://www.stylinwithcss.com/images/stylin3_cover1-130x160.jpg" alt="Stylin' with CSS cover" />
+                <aside> <!-- 弹出层 -->
+                    <ol>
+                        <li><a href="#">Download the Code</a></li>
+                        <li><a href="#">Table of Contents</a></li>
+                        <li><a href="#">Buy this Book</a></li>
+                    </ol>
+                </aside>
+            </div>
+        </article>
+        <article class="left">
+            <div class="inner">
+                <h3>HTML5 + CSS3</h3><!-- 要旋转的文字 -->
+                <img src="http://www.stylinwithcss.com/images/stylin3_cover1-130x160.jpg" alt="Stylin' with CSS cover" />
+                <aside> <!-- 弹出层 -->
+                    <ol>
+                        <li><a href="#">Download the Code</a></li>
+                        <li><a href="#">Table of Contents</a></li>
+                        <li><a href="#">Buy this Book</a></li>
+                    </ol>
+                </aside>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <p>A CSS template from <a href="http://www.stylinwithcss.com"><em>Stylin'
+            with CSS, Third Edition</em></a> by Charles Wyke-Smith</p>
+        <nav>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact Charles</a></li>
+            </ul>
+        </nav>
+    </footer>
 </div>
 </body>
 </html>
